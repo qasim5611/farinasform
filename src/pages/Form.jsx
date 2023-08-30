@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useDispatch } from "react";
+import React, { useState, useDispatch, useEffect } from "react";
 import {
   Box,
   Button,
@@ -20,7 +20,9 @@ import {
 } from "@/components/SmallComponents/AppComponents";
 
 import { LivechatWidget } from "@livechat/widget-react";
+import ChatbotWidget from "./ChatbotWidget";
 import ResultComponent from "./ResultComponent";
+import createMomentsSDK from "@livechat/moments-sdk";
 
 const inputStyle = {
   mt: 1,
@@ -54,6 +56,7 @@ const labelStyle = {
 
 function Form() {
   // const dispatch = usesDispatch();
+  const [momentsSDK, setMomentsSDK] = useState(null);
 
   const matches2 = useMediaQuery("(max-width:776px)");
   const [alertState, setAlertState] = useState({
@@ -61,6 +64,18 @@ function Form() {
     message: "",
     severity: undefined,
   });
+
+  useEffect(() => {
+    const createMoments = async () => {
+      const moments = await createMomentsSDK({
+        title: "Farinas Form",
+        icon: `https://farinatravels.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.9855d9ac.png&w=750&q=75`,
+      });
+      setMomentsSDK(moments);
+    };
+
+    createMoments();
+  }, []);
   const [isbtnClick, setisbtnClick] = useState(false);
 
   const [formInputData, setFormInputData] = useState({
@@ -123,6 +138,18 @@ function Form() {
       setisbtnClick(true);
       setFormInputDataSend(formInputData);
 
+      if (!formInputData || !momentsSDK) {
+        return;
+      }
+
+      momentsSDK.sendMessage({ text: "Chosen date: 19.12.2009" });
+      momentsSDK.close();
+
+      // createMomentsSDK({ title: "My App" }).then((momentsSDK) => {
+      //   // your code
+      //   momentsSDK.sendMessage({ text: "Chosen date: 19.12.2009" });
+      // });
+
       setTimeout(() => {
         showAlertSucc("Thanks! Your Cheap Flight Form Send to Farina Agent.");
       }, 3000);
@@ -130,11 +157,11 @@ function Form() {
   };
   return (
     <>
-      {isbtnClick === true ? (
+      {/* {isbtnClick === true ? (
         <ResultComponent formData={formInputDatatoSend} />
       ) : (
         <span>load</span>
-      )}
+      )} */}
       <ToastNotify alertState={alertState} setAlertState={setAlertState} />
       <Box py={4} sx={{ backgroundColor: "#CBE8FF" }}>
         <Container>

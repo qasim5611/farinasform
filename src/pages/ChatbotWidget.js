@@ -55,6 +55,8 @@ const ChatbotWidget = () => {
     document.body.appendChild(script2);
   }, []);
 
+  <script src="https://cdn.livechat-static.com/moments-sdk/moments-sdk-1.8.1.umd.min.js"></script>;
+
   return <div id="chatbot-widget-container"></div>;
 };
 
