@@ -487,7 +487,7 @@ function Form() {
                     }}
                     disableElevation
                   >
-                    Search Flights
+                    Search Flight
                   </Button>
                 </Box>
               </Grid>
