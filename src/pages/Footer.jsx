@@ -8,8 +8,8 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-import ChatbotWidget from "./ChatbotWidget";
-import ResultComponent from "./ResultComponent";
+// import ChatbotWidget from "./ChatbotWidget";
+// import ResultComponent from "./ResultComponent";
 
 export default function Footer() {
   const [amount, setamount] = useState();
@@ -240,8 +240,8 @@ export default function Footer() {
         >
           © 2020 Farina Travel & Tours. All rights reserved
         </Typography>
-        <ChatbotWidget />
-        <ResultComponent />
+        {/* <ChatbotWidget />
+        <ResultComponent /> */}
       </Box>
     </>
   );

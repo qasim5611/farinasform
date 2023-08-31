@@ -1029,7 +1029,7 @@
   resolved "https://registry.npmjs.org/@babel/regjsgen/-/regjsgen-0.8.0.tgz"
   integrity sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==
 
-"@babel/runtime@^7.10.5", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.5", "@babel/runtime@^7.22.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.10.5", "@babel/runtime@^7.12.5", "@babel/runtime@^7.18.3", "@babel/runtime@^7.20.7", "@babel/runtime@^7.21.0", "@babel/runtime@^7.22.5", "@babel/runtime@^7.22.6", "@babel/runtime@^7.3.1", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.3", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.22.6"
   resolved "https://registry.npmjs.org/@babel/runtime/-/runtime-7.22.6.tgz"
   integrity sha512-wDb5pWm4WDdF6LFUde3Jl8WzPA+3ZbxYqkC6xAXuD3irdEHN1k0NfTRrJD8ZD378SJ61miMLCqIOXYhd8x+AJQ==
@@ -1280,50 +1280,17 @@
   resolved "https://registry.npmjs.org/@livechat/backoff/-/backoff-0.1.0.tgz"
   integrity sha512-PrLsKYSBtIrBPPDj0urtjcu4yjZzZUhxljydm2T9ESYN3uHWzvXNNqaqTQo4tJSHOjaqlL3IpwRz3U3gu/Omow==
 
-"@livechat/customer-auth@^0.4.0-alpha.7":
-  version "0.4.0-alpha.7"
-  resolved "https://registry.npmjs.org/@livechat/customer-auth/-/customer-auth-0.4.0-alpha.7.tgz"
-  integrity sha512-Lr7JD2c9pBqSQDT0stPAzsXpmqRoKM8X7N6jBcfDAMOIolBiqLWpEzcW48k5FMV/zt+9cNvmP8NO90GggmJsVQ==
-  dependencies:
-    "@livechat/dom-utils" "^0.2.6"
-    "@livechat/isomorphic-storage" "^0.1.0"
-    "@livechat/url-utils" "^0.2.0"
-
-"@livechat/customer-sdk@^3.1.3":
-  version "3.1.3"
-  resolved "https://registry.npmjs.org/@livechat/customer-sdk/-/customer-sdk-3.1.3.tgz"
-  integrity sha512-BAghpxDuHhss7LXFUVr5zWlecuSm074EpT11oIJ2Hh0yJUshOA8Gc8B8adhi+suVbnT3sKKzXqIZIXeKf6S3uw==
-  dependencies:
-    "@livechat/backoff" "^0.1.0"
-    "@livechat/customer-auth" "^0.4.0-alpha.7"
-    "@livechat/data-utils" "^1.0.3"
-    "@livechat/file-upload" "^0.3.0"
-    "@livechat/isomorphic-storage" "^0.1.0"
-    "@livechat/mitt" "^0.1.3"
-    "@livechat/platform-client" "^0.3.1"
-    "@livechat/promise-utils" "^1.0.1"
-    "@livechat/side-effects-middleware" "^0.2.0"
-    "@livechat/url-utils" "^0.2.1"
-    redux "^4.0.4"
-    ts-toolbelt "^6.7.5"
-    unfetch "^4.2.0"
-
-"@livechat/data-utils@^0.2.16":
+"@livechat/data-utils@^0.2.16", "@livechat/data-utils@^0.2.5":
   version "0.2.17"
   resolved "https://registry.npmjs.org/@livechat/data-utils/-/data-utils-0.2.17.tgz"
   integrity sha512-QbjW6D8AMm2VDGZJiYs5Cz3dMWOES8rQLLob6MLYwnZvBFqi6186sx2Ca+4o4DnRXCFiYZYJIYhwcgFcwbi+Kw==
 
-"@livechat/data-utils@^0.2.5":
-  version "0.2.17"
-  resolved "https://registry.npmjs.org/@livechat/data-utils/-/data-utils-0.2.17.tgz"
-  integrity sha512-QbjW6D8AMm2VDGZJiYs5Cz3dMWOES8rQLLob6MLYwnZvBFqi6186sx2Ca+4o4DnRXCFiYZYJIYhwcgFcwbi+Kw==
-
-"@livechat/data-utils@^1.0.1", "@livechat/data-utils@^1.0.2", "@livechat/data-utils@^1.0.3":
+"@livechat/data-utils@^1.0.2":
   version "1.0.3"
   resolved "https://registry.npmjs.org/@livechat/data-utils/-/data-utils-1.0.3.tgz"
   integrity sha512-Ao0b6UMxJ1CmqRhFjMsd2n6gM4fmfbwe2gZTbTLdvU2u5OQHj008T20mjQ+NOPwbcT+8dMj8wF5TrftMu4oA1w==
 
-"@livechat/dom-utils@^0.2.5", "@livechat/dom-utils@^0.2.6":
+"@livechat/dom-utils@^0.2.5":
   version "0.2.6"
   resolved "https://registry.npmjs.org/@livechat/dom-utils/-/dom-utils-0.2.6.tgz"
   integrity sha512-900OpCS7VA9hC9iUSQWdxEGO2aInAUvkfh3klvacVGr30tEzfKNxXTfQVfAypgAWz1213ScUWPztPpogVBV3Rw==
@@ -1332,19 +1299,7 @@
     csstype "^2.6.5"
     tabbable "^5.1.4"
 
-"@livechat/file-upload@^0.3.0":
-  version "0.3.0"
-  resolved "https://registry.npmjs.org/@livechat/file-upload/-/file-upload-0.3.0.tgz"
-  integrity sha512-uAAfyZVC5JfintGj70der3mGYujOTxaMUxqYFCtvfbpdHl66ix6V7u64FMCtzBM7KtecZJO/dvOh4zc/SwqbOg==
-
-"@livechat/isomorphic-storage@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/@livechat/isomorphic-storage/-/isomorphic-storage-0.1.0.tgz"
-  integrity sha512-cQ0l4hFuFR+ckk/xoB17qetW5m812V/fOjUQ8AAMm/R1zLCyO3uaPjZqmadp72b1f4Lahx2bImT9PssTwrbDvQ==
-  dependencies:
-    memory-web-storage "^0.1.0"
-
-"@livechat/mitt@^0.1.2", "@livechat/mitt@^0.1.3":
+"@livechat/mitt@^0.1.3":
   version "0.1.3"
   resolved "https://registry.npmjs.org/@livechat/mitt/-/mitt-0.1.3.tgz"
   integrity sha512-EmAxcXFuzCz0cDrFOQHDyzeDjym8XAu6fKcEyEkQVpvghFyjC7ORn/9DW1FDRqTvtJ80kfNUTejqRW0xvYYyzQ==
@@ -1364,16 +1319,6 @@
   version "1.8.1"
   resolved "https://registry.npmjs.org/@livechat/moments-types/-/moments-types-1.8.1.tgz"
   integrity sha512-AlZ+SiGV5cxsywfI0dolmQDY7YLddp4+0U4HR4afwd3Uy0xloVa+NcB7r5KB4Zii01sOelK0Sd899zcTC6vLag==
-
-"@livechat/platform-client@^0.3.1":
-  version "0.3.2"
-  resolved "https://registry.npmjs.org/@livechat/platform-client/-/platform-client-0.3.2.tgz"
-  integrity sha512-yrOoy2WOBfjSf/7yzyExl6RFMW6JFqyVoROXTvA++ULtmLM+P/j5RdGc4qdVh9jj6otwW/qnqQM3i1ysXYqsaA==
-  dependencies:
-    "@livechat/data-utils" "^1.0.3"
-    "@livechat/mitt" "^0.1.3"
-    "@livechat/promise-utils" "^1.0.1"
-    "@livechat/websocket-manager" "^0.1.1"
 
 "@livechat/postmessage@0.3.5":
   version "0.3.5"
@@ -1411,41 +1356,6 @@
   integrity sha512-/+HAPLxrx9KckAx8xbtcOXRPdSR+X6gU21crlb3/A3tnFqSbdXHKAXgysYfALlRJx7HdTzlS9Au+G6srQVO85g==
   dependencies:
     "@livechat/backoff" "^0.1.0"
-
-"@livechat/side-effects-middleware@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.npmjs.org/@livechat/side-effects-middleware/-/side-effects-middleware-0.2.0.tgz"
-  integrity sha512-WqoEJd7AkvN0ofRrdzclgvEbZciOnJK5Tz8vTmRVbOE8ti1aUDTfRxGiKg1MBOKid+6VFE95QJIlNOA2jCC6SQ==
-
-"@livechat/url-utils@^0.2.0", "@livechat/url-utils@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/@livechat/url-utils/-/url-utils-0.2.1.tgz"
-  integrity sha512-vWotJfqyPxVXXboaJr+L2hlYxzO0JVnhYgrFicV5TONFyUGbZVAg2oibfmi6hD9dvobh/FFitzYtPY88pIakmg==
-  dependencies:
-    "@livechat/data-utils" "^1.0.1"
-
-"@livechat/websocket-manager@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.npmjs.org/@livechat/websocket-manager/-/websocket-manager-0.1.1.tgz"
-  integrity sha512-uFPFYZg+P5sTMR+EwadLOyXElkjYIOH6vxnJ6p4ntCojMJ1fLvNO4vfPECWHR8eKIsbLwm7DCq3qu7Kww9p6WQ==
-  dependencies:
-    "@livechat/backoff" "^0.1.0"
-    "@livechat/mitt" "^0.1.2"
-    "@livechat/url-utils" "^0.2.0"
-
-"@livechat/widget-core@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.npmjs.org/@livechat/widget-core/-/widget-core-1.3.1.tgz"
-  integrity sha512-PQPiWvtCg5IzKF5CTEQP19UYnR+WEyIg/cVitkxVkzZ7xvCpswJqQUDv8HIu/Jhlp5x0oqAWaqGjVrLFDem+dg==
-  dependencies:
-    mitt "3.0.0"
-
-"@livechat/widget-react@^1.3.1":
-  version "1.3.1"
-  resolved "https://registry.npmjs.org/@livechat/widget-react/-/widget-react-1.3.1.tgz"
-  integrity sha512-D8u4+tR1v75oGlDFTqPoyzRFdROdZ5hU6JZOA2g4kFvC0Bd8Mt3HBOajGr11O41ayUcjFqOtYN/esfa/Q4AGfg==
-  dependencies:
-    "@livechat/widget-core" "^1.3.1"
 
 "@mui/base@5.0.0-beta.8":
   version "5.0.0-beta.8"
@@ -3995,11 +3905,6 @@ make-dir@^2.1.0:
     pify "^4.0.1"
     semver "^5.6.0"
 
-memory-web-storage@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/memory-web-storage/-/memory-web-storage-0.1.0.tgz"
-  integrity sha512-AVVlRidjJlKqdzdxdsvXgX24m2eA/8FFlqBrvHN9JRlzMuYCGev7o0bjkP207UhkqVtIg1sNyEHBq2uvykA/3w==
-
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/merge-stream/-/merge-stream-2.0.0.tgz"
@@ -4071,11 +3976,6 @@ mitt@^3.0.1:
   version "3.0.1"
   resolved "https://registry.npmjs.org/mitt/-/mitt-3.0.1.tgz"
   integrity sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==
-
-mitt@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npmjs.org/mitt/-/mitt-3.0.0.tgz"
-  integrity sha512-7dX2/10ITVyqh4aOSVI9gdape+t9l2/8QxHrFmUXu4EEUpdlxl6RudZUPZoc+zuY2hk1j7XxVroIVIan/pD/SQ==
 
 mkdirp-classic@^0.5.2, mkdirp-classic@^0.5.3:
   version "0.5.3"
@@ -4616,7 +4516,7 @@ react-transition-group@^4.4.5:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@*, "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8 || 17 || 18", "react@^16.8.3 || ^17 || ^18", react@^17.0.0, "react@^17.0.0 || ^18.0.0", react@^17.0.2, react@^18.2.0, "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>= 16.8.0 || 18.0.0", react@>=16.6.0, react@>=16.8.0, react@18.2.0:
+react@*, "react@^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.3 || ^17 || ^18", react@^17.0.0, "react@^17.0.0 || ^18.0.0", react@^17.0.2, react@^18.2.0, "react@>= 16.8.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>= 16.8.0 || 18.0.0", react@>=16.6.0, react@>=16.8.0, react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
@@ -4650,13 +4550,6 @@ redis-parser@^3.0.0:
   integrity sha512-DJnGAeenTdpMEH6uAJRK/uiyEIH9WVsUmoLwzudwGJUwZPp80PDBWPHXSAGNPwNvIXAbe7MSUB1zQFugFml66A==
   dependencies:
     redis-errors "^1.0.0"
-
-redux@^4.0.4:
-  version "4.2.1"
-  resolved "https://registry.npmjs.org/redux/-/redux-4.2.1.tgz"
-  integrity sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==
-  dependencies:
-    "@babel/runtime" "^7.9.2"
 
 regenerate-unicode-properties@^10.1.0:
   version "10.1.0"
@@ -5203,11 +5096,6 @@ tr46@~0.0.3:
   resolved "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
 
-ts-toolbelt@^6.7.5:
-  version "6.15.5"
-  resolved "https://registry.npmjs.org/ts-toolbelt/-/ts-toolbelt-6.15.5.tgz"
-  integrity sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==
-
 tsconfig-paths@^3.14.2:
   version "3.14.2"
   resolved "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.14.2.tgz"
@@ -5328,11 +5216,6 @@ unenv@^1.6.1:
     mime "^3.0.0"
     node-fetch-native "^1.2.0"
     pathe "^1.1.1"
-
-unfetch@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/unfetch/-/unfetch-4.2.0.tgz"
-  integrity sha512-F9p7yYCn6cIW9El1zi0HI6vqpeIvBsr3dSuRO6Xuppb1u5rXpCPmMvLSyECLhybr9isec8Ohl0hPekMVrEinDA==
 
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.0"

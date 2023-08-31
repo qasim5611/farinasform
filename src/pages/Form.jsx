@@ -19,9 +19,9 @@ import {
   handleWheel,
 } from "@/components/SmallComponents/AppComponents";
 
-import { LivechatWidget } from "@livechat/widget-react";
-import ChatbotWidget from "./ChatbotWidget";
-import ResultComponent from "./ResultComponent";
+// import { LivechatWidget } from "@livechat/widget-react";
+// import ChatbotWidget from "./ChatbotWidget";
+// import ResultComponent from "./ResultComponent";
 import createMomentsSDK from "@livechat/moments-sdk";
 
 const inputStyle = {
@@ -135,24 +135,24 @@ function Form() {
     console.log("formInputData", formInputData);
 
     setTimeout(() => {
-      setisbtnClick(true);
+      // setisbtnClick(true);
       setFormInputDataSend(formInputData);
 
       if (!formInputData || !momentsSDK) {
         return;
+      } else {
+        momentsSDK.sendMessage({ text: "Chosen date: 19.12.2009" });
+        momentsSDK.close();
       }
-
-      momentsSDK.sendMessage({ text: "Chosen date: 19.12.2009" });
-      momentsSDK.close();
 
       // createMomentsSDK({ title: "My App" }).then((momentsSDK) => {
       //   // your code
       //   momentsSDK.sendMessage({ text: "Chosen date: 19.12.2009" });
       // });
 
-      setTimeout(() => {
-        showAlertSucc("Thanks! Your Cheap Flight Form Send to Farina Agent.");
-      }, 3000);
+      // setTimeout(() => {
+      //   showAlertSucc("Thanks! Your Cheap Flight Form Send to Farina Agent.");
+      // }, 3000);
     }, 3000);
   };
   return (
@@ -162,6 +162,7 @@ function Form() {
       ) : (
         <span>load</span>
       )} */}
+      {/* <ChatbotWidget /> */}
       <ToastNotify alertState={alertState} setAlertState={setAlertState} />
       <Box py={4} sx={{ backgroundColor: "#CBE8FF" }}>
         <Container>

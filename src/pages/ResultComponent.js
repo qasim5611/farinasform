@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import axios from "axios";
-import * as CustomerSDK from "@livechat/customer-sdk";
+// import * as CustomerSDK from "@livechat/customer-sdk";
 
 import createMomentsSDK from "@livechat/moments-sdk";
 
